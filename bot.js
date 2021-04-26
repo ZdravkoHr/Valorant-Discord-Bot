@@ -14,5 +14,6 @@ client.on('message', async msg => {
 		const response = await fetch(url);
 		const json = await response.json();
 		msg.channel.send(json.results[0].url);
+		msg.channel.send('ask');
 	}
 });
