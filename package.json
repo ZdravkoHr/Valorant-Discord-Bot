@@ -3,13 +3,18 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "bot.js",
+	"watch": {
+		"test": "bot.js"
+	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "tape test/bot.js",
+		"watch": "npm-watch"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"discord.js": "^12.5.3",
-		"node-fetch": "^2.6.1"
+		"node-fetch": "^2.6.1",
+		"npm-watch": "^0.9.0"
 	}
 }
