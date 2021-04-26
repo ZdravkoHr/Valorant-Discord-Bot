@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const client = new Discord.Client();
 const TENOR_API_KEY = '6JZKPHOQ8PSC';
-client.login('ODM1ODY4MzI4ODc4NjY5ODQ1.YIVtCw.X8RgcKTaVy_Yb8waWlCXsC7f9dY');
+client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
 	console.log(':beer');
